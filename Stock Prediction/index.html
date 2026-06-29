@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stock Coverage Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f1117;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card {
+        background: #1a1d29;
+        padding: 25px;
+        border-radius: 16px;
+        width: 380px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: none;
+        background: #2a2f3f;
+        color: white;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #4f7cff;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #3c63d6;
+    }
+    .result {
+        margin-top: 20px;
+        padding: 15px;
+        background: #11131c;
+        border-radius: 10px;
+    }
+    .result p {
+        margin: 6px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Stock Coverage</h2>
+
+    <input type="number" id="stock" placeholder="Total Stock (units)">
+    <input type="number" id="sales7" placeholder="Last 7 Days Sales">
+    <input type="number" id="sales14" placeholder="Last 14 Days Sales">
+    <input type="number" id="sales30" placeholder="Last 30 Days Sales">
+    <input type="date" id="today">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="result" style="display:none;">
+        <p><strong>Weighted Daily Sales:</strong> <span id="daily"></span></p>
+        <p><strong>Stock Coverage:</strong> <span id="coverage"></span></p>
+        <p><strong>Stock-out Date:</strong> <span id="oos"></span></p>
+    </div>
+</div>
+
+<script>
+function calculate() {
+    let stock = parseFloat(document.getElementById('stock').value);
+    let s7 = parseFloat(document.getElementById('sales7').value);
+    let s14 = parseFloat(document.getElementById('sales14').value);
+    let s30 = parseFloat(document.getElementById('sales30').value);
+    let today = new Date(document.getElementById('today').value);
+
+    if (!stock || !s7 || !s14 || !s30 || !today) {
+        alert("Fill all fields");
+        return;
+    }
+
+    let d7 = s7 / 7;
+    let d14 = s14 / 14;
+    let d30 = s30 / 30;
+
+    let weighted = (d7 * 0.5) + (d14 * 0.3) + (d30 * 0.2);
+
+    let coverage = stock / weighted;
+
+    let oosDate = new Date(today);
+    oosDate.setDate(oosDate.getDate() + Math.floor(coverage));
+
+    document.getElementById('daily').innerText = weighted.toFixed(2) + " units/day";
+    document.getElementById('coverage').innerText = coverage.toFixed(1) + " days";
+    document.getElementById('oos').innerText = oosDate.toDateString();
+
+    document.getElementById('result').style.display = "block";
+}
+</script>
+
+</body>
+</html>
