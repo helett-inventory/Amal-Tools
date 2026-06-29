@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project lication Directory</title>
+    <style>
+        :root {
+            --primary-color: #0f1c3f; /* Deep academic navy */
+            --secondary-color: #4a5568;
+            --border-color: #cbd5e1;
+            --bg-light: #f8fafc;
+            --text-main: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .dashboard-wrer {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Official Institutional Header */
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding: 30px 40px;
+            background: #ffffff;
+        }
+
+        .meta-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        /*  Directory Grid/List */
+        .directory-container {
+            padding: 40px;
+        }
+
+        .directory-instruction {
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+            margin-bottom: 24px;
+        }
+
+        .-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .-card {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: #ffffff;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .-card:hover {
+            border-color: var(--primary-color);
+            background-color: #f0f4f8;
+            transform: translateX(4px);
+        }
+
+        .-details {
+            padding-right: 20px;
+        }
+
+        .-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .-description {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        .launch-badge {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            background: #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 3px;
+            white-space: nowrap;
+            align-self: center;
+        }
+
+        .-card:hover .launch-badge {
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+
+        /* Official Footer */
+        footer {
+            margin-top: 40px;
+            padding: 20px 40px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            background: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-wrer">
+        
+        <header>
+            <div class="meta-tag">Amal's Tools</div>
+            <h1>For Helett</h1>
+            
+            <div class="project-meta">
+                                <div class="meta-item"></div>
+            </div>
+        </header>
+
+        <main class="directory-container">
+            <p class="directory-instruction">
+                Select an lication from the index below to launch it in your browser
+            </p>
+
+            <div class="-list">
+                
+                <a href="./calculator/index.html" class="-card">
+                    <div class="-details">
+                        <div class="-title">01. Scientific Calculator Matrix</div>
+                        <div class="-description">A parsing engine built to calculate complex algebraic algorithms and trigonometric matrices.</div>
+                    </div>
+                    <span class="launch-badge">Launch </span>
+                </a>
+
+                <a href="./weather-/index.html" class="-card">
+                    <div class="-details">
+                        <div class="-title">02. Meteorological Telemetry Interface</div>
+                        <div class="-description">Fetches, parses, and structures live asynchronous weather data from global public API endpoints.</div>
+                    </div>
+                    <span class="launch-badge">Launch </span>
+                </a>
+
+                <a href="./todo-list/index.html" class="-card">
+                    <div class="-details">
+                        <div class="-title">03. Task Persistence Engine</div>
+                        <div class="-description">A state-managed organizational tool utilizing localized browser storage serialization.</div>
+                    </div>
+                    <span class="launch-badge">Launch </span>
+                </a>
+
+                
+
+            </div>
+        </main>
+
+        <footer>
+                        <div>Inventory Department</div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
