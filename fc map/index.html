@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1231ba74c6d078501ce7c0796b7bfe3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1231ba74c6d078501ce7c0796b7bfe3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1231ba74c6d078501ce7c0796b7bfe3 = L.map(
+                "map_f1231ba74c6d078501ce7c0796b7bfe3",
+                {
+                    center: [22.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+
+            
+
+        
+    
+            var tile_layer_457b7b546835406a297761c0aea7bb7c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_457b7b546835406a297761c0aea7bb7c.addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_1fe121f71fd941e6f1959fb8f555094d = L.marker(
+                [22.8669, 72.4117],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_bb5f9f7bb8923f52b93338db99f0c851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09af8a361a68641530f7e602e788f705 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fcb485840dfb72073af0b87a9b39af4 = $(`<div id="html_2fcb485840dfb72073af0b87a9b39af4" style="width: 100.0%; height: 100.0%;"><b>FC:</b> AMD2-GJ<br><b>Region:</b> Ahmedabad (Bavla)</div>`)[0];
+                popup_09af8a361a68641530f7e602e788f705.setContent(html_2fcb485840dfb72073af0b87a9b39af4);
+            
+        
+
+        marker_1fe121f71fd941e6f1959fb8f555094d.bindPopup(popup_09af8a361a68641530f7e602e788f705)
+        ;
+
+        
+    
+    
+            marker_1fe121f71fd941e6f1959fb8f555094d.bindTooltip(
+                `<div>
+                     AMD2-GJ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fe121f71fd941e6f1959fb8f555094d.setIcon(icon_bb5f9f7bb8923f52b93338db99f0c851);
+            
+    
+            var circle_a27bb221f1d73322b2cdc1e84fc4149d = L.circle(
+                [22.8669, 72.4117],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_554e87ac56aa1b143bd6bb5bef857379 = L.marker(
+                [13.2484, 77.7127],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_a53b4d1d58411e32c43b641b5a6d3d33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12884f48227798c5a01cae9746fd5f63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65262419b5869eb0e975f31fac9e593f = $(`<div id="html_65262419b5869eb0e975f31fac9e593f" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BLR4-KA<br><b>Region:</b> Bengaluru (Devanahalli)</div>`)[0];
+                popup_12884f48227798c5a01cae9746fd5f63.setContent(html_65262419b5869eb0e975f31fac9e593f);
+            
+        
+
+        marker_554e87ac56aa1b143bd6bb5bef857379.bindPopup(popup_12884f48227798c5a01cae9746fd5f63)
+        ;
+
+        
+    
+    
+            marker_554e87ac56aa1b143bd6bb5bef857379.bindTooltip(
+                `<div>
+                     BLR4-KA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_554e87ac56aa1b143bd6bb5bef857379.setIcon(icon_a53b4d1d58411e32c43b641b5a6d3d33);
+            
+    
+            var circle_a20a465f683930b8b71a27ee8fd026af = L.circle(
+                [13.2484, 77.7127],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_96ade8fbb6eac723e1647fdce67588d8 = L.marker(
+                [13.0722, 77.7942],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_da1a50d6d638942a04ef0f7117fb590f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb9d7428219d13fd8ca6377d5625ff31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bafbc1f33718c26c846b5add2d6b8e06 = $(`<div id="html_bafbc1f33718c26c846b5add2d6b8e06" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BLR5-KA<br><b>Region:</b> Bengaluru (Hoskote)</div>`)[0];
+                popup_eb9d7428219d13fd8ca6377d5625ff31.setContent(html_bafbc1f33718c26c846b5add2d6b8e06);
+            
+        
+
+        marker_96ade8fbb6eac723e1647fdce67588d8.bindPopup(popup_eb9d7428219d13fd8ca6377d5625ff31)
+        ;
+
+        
+    
+    
+            marker_96ade8fbb6eac723e1647fdce67588d8.bindTooltip(
+                `<div>
+                     BLR5-KA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96ade8fbb6eac723e1647fdce67588d8.setIcon(icon_da1a50d6d638942a04ef0f7117fb590f);
+            
+    
+            var circle_2075f48434b1f7ec97e125ae6102bc42 = L.circle(
+                [13.0722, 77.7942],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_6ebb7889d81d87858c4889f1cfecc458 = L.marker(
+                [12.7067, 77.7103],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_9d161d156c97486bd119113267b3f652 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3daf2fb652cc7e3938352acbb900d76d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f550673573603708d653eeb9bab34fe8 = $(`<div id="html_f550673573603708d653eeb9bab34fe8" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BLR7-KA<br><b>Region:</b> Bengaluru (Anekal)</div>`)[0];
+                popup_3daf2fb652cc7e3938352acbb900d76d.setContent(html_f550673573603708d653eeb9bab34fe8);
+            
+        
+
+        marker_6ebb7889d81d87858c4889f1cfecc458.bindPopup(popup_3daf2fb652cc7e3938352acbb900d76d)
+        ;
+
+        
+    
+    
+            marker_6ebb7889d81d87858c4889f1cfecc458.bindTooltip(
+                `<div>
+                     BLR7-KA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ebb7889d81d87858c4889f1cfecc458.setIcon(icon_9d161d156c97486bd119113267b3f652);
+            
+    
+            var circle_d3224235149f1ed675cde1c3384f3b32 = L.circle(
+                [12.7067, 77.7103],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_b758c6357e0c561bd4f1d2f52e891ead = L.marker(
+                [13.25, 77.715],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_86d2c4948309600b0bcd9b8931eebc0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9698d93ab4998157718ab5ac16ecc130 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fe0793bd9b4e41cbbeb2bfc5fc6eb84 = $(`<div id="html_5fe0793bd9b4e41cbbeb2bfc5fc6eb84" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BLR8-KA<br><b>Region:</b> Bengaluru (Devanahalli)</div>`)[0];
+                popup_9698d93ab4998157718ab5ac16ecc130.setContent(html_5fe0793bd9b4e41cbbeb2bfc5fc6eb84);
+            
+        
+
+        marker_b758c6357e0c561bd4f1d2f52e891ead.bindPopup(popup_9698d93ab4998157718ab5ac16ecc130)
+        ;
+
+        
+    
+    
+            marker_b758c6357e0c561bd4f1d2f52e891ead.bindTooltip(
+                `<div>
+                     BLR8-KA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b758c6357e0c561bd4f1d2f52e891ead.setIcon(icon_86d2c4948309600b0bcd9b8931eebc0c);
+            
+    
+            var circle_3e35bbd42bfb3e6a66d2757fbf178e63 = L.circle(
+                [13.25, 77.715],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_d639935d50a233204b9477d2f4360c9e = L.marker(
+                [19.3321, 73.1616],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_9a35f1950fffc10899d2fcc8be61b400 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43c08a5eeee89becc682f18fcdd87f71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ca983326fe187e05d1fa99ad57fa9b1 = $(`<div id="html_0ca983326fe187e05d1fa99ad57fa9b1" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BOM5-MH<br><b>Region:</b> Mumbai/Thane (Bhiwandi)</div>`)[0];
+                popup_43c08a5eeee89becc682f18fcdd87f71.setContent(html_0ca983326fe187e05d1fa99ad57fa9b1);
+            
+        
+
+        marker_d639935d50a233204b9477d2f4360c9e.bindPopup(popup_43c08a5eeee89becc682f18fcdd87f71)
+        ;
+
+        
+    
+    
+            marker_d639935d50a233204b9477d2f4360c9e.bindTooltip(
+                `<div>
+                     BOM5-MH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d639935d50a233204b9477d2f4360c9e.setIcon(icon_9a35f1950fffc10899d2fcc8be61b400);
+            
+    
+            var circle_e3a17819e803d8d4ce39fe4185b44f84 = L.circle(
+                [19.3321, 73.1616],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_889fcad46db056bdf5f949556f444f81 = L.marker(
+                [19.31, 73.05],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_1383126c1f7d1dec750af281b5e7f67b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84bea069514d85bf1d22dac31565bda1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9962ce3993d8018bea956ff705560066 = $(`<div id="html_9962ce3993d8018bea956ff705560066" style="width: 100.0%; height: 100.0%;"><b>FC:</b> BOM7-MH<br><b>Region:</b> Mumbai/Thane (Bhiwandi)</div>`)[0];
+                popup_84bea069514d85bf1d22dac31565bda1.setContent(html_9962ce3993d8018bea956ff705560066);
+            
+        
+
+        marker_889fcad46db056bdf5f949556f444f81.bindPopup(popup_84bea069514d85bf1d22dac31565bda1)
+        ;
+
+        
+    
+    
+            marker_889fcad46db056bdf5f949556f444f81.bindTooltip(
+                `<div>
+                     BOM7-MH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_889fcad46db056bdf5f949556f444f81.setIcon(icon_1383126c1f7d1dec750af281b5e7f67b);
+            
+    
+            var circle_b0c9fe59acc50f5cdb62d87743e0b1d3 = L.circle(
+                [19.31, 73.05],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_4c4864be056a5ce77a8513b93898661f = L.marker(
+                [22.5386, 88.1364],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_03ff1a88e0d2308e5991e3df976fce90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8da51657e933ecced339e0b51b62333c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5935395b3e761d774e8f8bd71fda99d = $(`<div id="html_f5935395b3e761d774e8f8bd71fda99d" style="width: 100.0%; height: 100.0%;"><b>FC:</b> CCX1-WB<br><b>Region:</b> Kolkata (Panchla)</div>`)[0];
+                popup_8da51657e933ecced339e0b51b62333c.setContent(html_f5935395b3e761d774e8f8bd71fda99d);
+            
+        
+
+        marker_4c4864be056a5ce77a8513b93898661f.bindPopup(popup_8da51657e933ecced339e0b51b62333c)
+        ;
+
+        
+    
+    
+            marker_4c4864be056a5ce77a8513b93898661f.bindTooltip(
+                `<div>
+                     CCX1-WB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c4864be056a5ce77a8513b93898661f.setIcon(icon_03ff1a88e0d2308e5991e3df976fce90);
+            
+    
+            var circle_d6d35bbe2c22697b23764704dbae2c80 = L.circle(
+                [22.5386, 88.1364],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_b26bb21522047abb3710763495d6af7d = L.marker(
+                [22.54, 88.14],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_7f429c280a8e9e7afee50293df016e15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d45f0d5e6e24d3b16c8f86aada357017 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4567be1ea1de44ceea5eeaba090170f3 = $(`<div id="html_4567be1ea1de44ceea5eeaba090170f3" style="width: 100.0%; height: 100.0%;"><b>FC:</b> CCX2-WB<br><b>Region:</b> Kolkata (Panchla)</div>`)[0];
+                popup_d45f0d5e6e24d3b16c8f86aada357017.setContent(html_4567be1ea1de44ceea5eeaba090170f3);
+            
+        
+
+        marker_b26bb21522047abb3710763495d6af7d.bindPopup(popup_d45f0d5e6e24d3b16c8f86aada357017)
+        ;
+
+        
+    
+    
+            marker_b26bb21522047abb3710763495d6af7d.bindTooltip(
+                `<div>
+                     CCX2-WB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b26bb21522047abb3710763495d6af7d.setIcon(icon_7f429c280a8e9e7afee50293df016e15);
+            
+    
+            var circle_95580fb6b5056652427fa8c759394545 = L.circle(
+                [22.54, 88.14],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_ecf0333208e9fa1b9368b28a31182a74 = L.marker(
+                [10.9254, 77.0191],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_bfabd9fc816ed467739daf39f0061fbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_779e01e852a4617f32b9890f1922031f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57c6858b3a6026b0bee6946064b939bc = $(`<div id="html_57c6858b3a6026b0bee6946064b939bc" style="width: 100.0%; height: 100.0%;"><b>FC:</b> CJB1-TN<br><b>Region:</b> Coimbatore</div>`)[0];
+                popup_779e01e852a4617f32b9890f1922031f.setContent(html_57c6858b3a6026b0bee6946064b939bc);
+            
+        
+
+        marker_ecf0333208e9fa1b9368b28a31182a74.bindPopup(popup_779e01e852a4617f32b9890f1922031f)
+        ;
+
+        
+    
+    
+            marker_ecf0333208e9fa1b9368b28a31182a74.bindTooltip(
+                `<div>
+                     CJB1-TN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ecf0333208e9fa1b9368b28a31182a74.setIcon(icon_bfabd9fc816ed467739daf39f0061fbe);
+            
+    
+            var circle_5415667ff0e0bf62b9b95f781c710e94 = L.circle(
+                [10.9254, 77.0191],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_317d894028debf1d7e7ea68858fd2eec = L.marker(
+                [28.8028, 77.1414],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_e23f745a05708b0db3da8fd28ad97972 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f03fa750d7294482bce77a955513e48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abf93b8f46fcffb754ea3dee6815d27c = $(`<div id="html_abf93b8f46fcffb754ea3dee6815d27c" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DED1-DL<br><b>Region:</b> Delhi NCR (Alipur)</div>`)[0];
+                popup_8f03fa750d7294482bce77a955513e48.setContent(html_abf93b8f46fcffb754ea3dee6815d27c);
+            
+        
+
+        marker_317d894028debf1d7e7ea68858fd2eec.bindPopup(popup_8f03fa750d7294482bce77a955513e48)
+        ;
+
+        
+    
+    
+            marker_317d894028debf1d7e7ea68858fd2eec.bindTooltip(
+                `<div>
+                     DED1-DL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_317d894028debf1d7e7ea68858fd2eec.setIcon(icon_e23f745a05708b0db3da8fd28ad97972);
+            
+    
+            var circle_19f1204ec164eeb74e77cb26b19a343c = L.circle(
+                [28.8028, 77.1414],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_728af6719b89bbd74b87ada7f871391e = L.marker(
+                [28.3182, 76.8174],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_ca5bdfcd431ea014596a6cdb0bf118c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_671e532351fb0703a4350fec65364e17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bb9a9aa5e201ca36769a6086be8adc2 = $(`<div id="html_4bb9a9aa5e201ca36769a6086be8adc2" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DED4-HR<br><b>Region:</b> Gurugram (Jamalpur)</div>`)[0];
+                popup_671e532351fb0703a4350fec65364e17.setContent(html_4bb9a9aa5e201ca36769a6086be8adc2);
+            
+        
+
+        marker_728af6719b89bbd74b87ada7f871391e.bindPopup(popup_671e532351fb0703a4350fec65364e17)
+        ;
+
+        
+    
+    
+            marker_728af6719b89bbd74b87ada7f871391e.bindTooltip(
+                `<div>
+                     DED4-HR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_728af6719b89bbd74b87ada7f871391e.setIcon(icon_ca5bdfcd431ea014596a6cdb0bf118c1);
+            
+    
+            var circle_ac61a3fef800ccb5be5ec6b42fd49a04 = L.circle(
+                [28.3182, 76.8174],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_111181d9019c3ac88312517742c1e0cb = L.marker(
+                [28.2439, 77.0652],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_c7580dabd9e70e5ae5c132f843c52017 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caa32d2f3374fe5a571c988def5e822b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b83137290819485f8d49f7261cf16399 = $(`<div id="html_b83137290819485f8d49f7261cf16399" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DED5-HR<br><b>Region:</b> Gurugram (Sohna)</div>`)[0];
+                popup_caa32d2f3374fe5a571c988def5e822b.setContent(html_b83137290819485f8d49f7261cf16399);
+            
+        
+
+        marker_111181d9019c3ac88312517742c1e0cb.bindPopup(popup_caa32d2f3374fe5a571c988def5e822b)
+        ;
+
+        
+    
+    
+            marker_111181d9019c3ac88312517742c1e0cb.bindTooltip(
+                `<div>
+                     DED5-HR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_111181d9019c3ac88312517742c1e0cb.setIcon(icon_c7580dabd9e70e5ae5c132f843c52017);
+            
+    
+            var circle_d8b8ba561a9434563c03d35af045a6b9 = L.circle(
+                [28.2439, 77.0652],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_ea4ba2030d4b91fb7b55d3636d5aab65 = L.marker(
+                [28.319, 76.818],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_b7abd2c1f790869dea176162f1df6a8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60dcf751fae1af6c2143f460e8aa5a96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22ab6a0d46bfd0b81eac58fa64ea5252 = $(`<div id="html_22ab6a0d46bfd0b81eac58fa64ea5252" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DEL4-HR<br><b>Region:</b> Gurugram (Jamalpur)</div>`)[0];
+                popup_60dcf751fae1af6c2143f460e8aa5a96.setContent(html_22ab6a0d46bfd0b81eac58fa64ea5252);
+            
+        
+
+        marker_ea4ba2030d4b91fb7b55d3636d5aab65.bindPopup(popup_60dcf751fae1af6c2143f460e8aa5a96)
+        ;
+
+        
+    
+    
+            marker_ea4ba2030d4b91fb7b55d3636d5aab65.bindTooltip(
+                `<div>
+                     DEL4-HR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea4ba2030d4b91fb7b55d3636d5aab65.setIcon(icon_b7abd2c1f790869dea176162f1df6a8f);
+            
+    
+            var circle_742d768df315df7ce3be2723ecaa260b = L.circle(
+                [28.319, 76.818],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_5faa5bc5917993dc1b793aa1d7622066 = L.marker(
+                [28.2934, 76.8481],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_59af86678229ab98ffa9332156724394 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c8dc8c50ca682ac749b383bf12dd6d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a2cf85ebd0f7470a13e5fe45ef2497 = $(`<div id="html_42a2cf85ebd0f7470a13e5fe45ef2497" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DEL5-HR<br><b>Region:</b> Gurugram (Binola)</div>`)[0];
+                popup_6c8dc8c50ca682ac749b383bf12dd6d7.setContent(html_42a2cf85ebd0f7470a13e5fe45ef2497);
+            
+        
+
+        marker_5faa5bc5917993dc1b793aa1d7622066.bindPopup(popup_6c8dc8c50ca682ac749b383bf12dd6d7)
+        ;
+
+        
+    
+    
+            marker_5faa5bc5917993dc1b793aa1d7622066.bindTooltip(
+                `<div>
+                     DEL5-HR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5faa5bc5917993dc1b793aa1d7622066.setIcon(icon_59af86678229ab98ffa9332156724394);
+            
+    
+            var circle_b734d9658222e3dbec8f00bc006a7b2e = L.circle(
+                [28.2934, 76.8481],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_83b1789f0297105776d8a68e06844be1 = L.marker(
+                [28.245, 77.066],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_c19f4b3d37ec42e0958d00c1bfc23bdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33b14c9cd58e12ab71fac71e595f3930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00a354ad89a8804f0fec4f5fcea1552d = $(`<div id="html_00a354ad89a8804f0fec4f5fcea1552d" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DEL8-HR<br><b>Region:</b> Gurugram (Sohna)</div>`)[0];
+                popup_33b14c9cd58e12ab71fac71e595f3930.setContent(html_00a354ad89a8804f0fec4f5fcea1552d);
+            
+        
+
+        marker_83b1789f0297105776d8a68e06844be1.bindPopup(popup_33b14c9cd58e12ab71fac71e595f3930)
+        ;
+
+        
+    
+    
+            marker_83b1789f0297105776d8a68e06844be1.bindTooltip(
+                `<div>
+                     DEL8-HR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83b1789f0297105776d8a68e06844be1.setIcon(icon_c19f4b3d37ec42e0958d00c1bfc23bdc);
+            
+    
+            var circle_14a24ea44d47313879174499da76fdb2 = L.circle(
+                [28.245, 77.066],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_8125aa1cab33865d3a376b2471038032 = L.marker(
+                [28.51, 77.29],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_4eac9e545e6485833ce6072dfdf481eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3990fbbca7f0c79e796b4c47a4cdc8e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c2acc0207c1c4e57b9f3c342a458401 = $(`<div id="html_4c2acc0207c1c4e57b9f3c342a458401" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DEX3-DL<br><b>Region:</b> Delhi (Mathura Road)</div>`)[0];
+                popup_3990fbbca7f0c79e796b4c47a4cdc8e8.setContent(html_4c2acc0207c1c4e57b9f3c342a458401);
+            
+        
+
+        marker_8125aa1cab33865d3a376b2471038032.bindPopup(popup_3990fbbca7f0c79e796b4c47a4cdc8e8)
+        ;
+
+        
+    
+    
+            marker_8125aa1cab33865d3a376b2471038032.bindTooltip(
+                `<div>
+                     DEX3-DL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8125aa1cab33865d3a376b2471038032.setIcon(icon_4eac9e545e6485833ce6072dfdf481eb);
+            
+    
+            var circle_8af26104286aa701d3d70b8913077bec = L.circle(
+                [28.51, 77.29],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_69188ea38ab9b805b2b9c2c40083299f = L.marker(
+                [28.5035, 77.302],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_2ca9eede3856e42ee4f8fb6a80540492 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7b2c3e425912a6d2f39f93a21239c1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d8d8a3f270276178b580f7047d2a5c6 = $(`<div id="html_9d8d8a3f270276178b580f7047d2a5c6" style="width: 100.0%; height: 100.0%;"><b>FC:</b> DEX8-DL<br><b>Region:</b> Delhi (Badarpur)</div>`)[0];
+                popup_f7b2c3e425912a6d2f39f93a21239c1c.setContent(html_9d8d8a3f270276178b580f7047d2a5c6);
+            
+        
+
+        marker_69188ea38ab9b805b2b9c2c40083299f.bindPopup(popup_f7b2c3e425912a6d2f39f93a21239c1c)
+        ;
+
+        
+    
+    
+            marker_69188ea38ab9b805b2b9c2c40083299f.bindTooltip(
+                `<div>
+                     DEX8-DL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69188ea38ab9b805b2b9c2c40083299f.setIcon(icon_2ca9eede3856e42ee4f8fb6a80540492);
+            
+    
+            var circle_3eccd3e8f2fcb243ab37d0d69ce48046 = L.circle(
+                [28.5035, 77.302],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_464e701cca211eaae4548a6097b02fc4 = L.marker(
+                [17.2181, 78.4356],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_967b790bbc65f1a6cb533ca778ad9956 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d0041528397bff77d94fb06cecbb0a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad46666e39cb38120d36c77ffc6dbace = $(`<div id="html_ad46666e39cb38120d36c77ffc6dbace" style="width: 100.0%; height: 100.0%;"><b>FC:</b> HYD3-TG<br><b>Region:</b> Hyderabad (Shamshabad)</div>`)[0];
+                popup_0d0041528397bff77d94fb06cecbb0a7.setContent(html_ad46666e39cb38120d36c77ffc6dbace);
+            
+        
+
+        marker_464e701cca211eaae4548a6097b02fc4.bindPopup(popup_0d0041528397bff77d94fb06cecbb0a7)
+        ;
+
+        
+    
+    
+            marker_464e701cca211eaae4548a6097b02fc4.bindTooltip(
+                `<div>
+                     HYD3-TG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_464e701cca211eaae4548a6097b02fc4.setIcon(icon_967b790bbc65f1a6cb533ca778ad9956);
+            
+    
+            var circle_6560e4a9ef45e8fe014ee7ce350b71b7 = L.circle(
+                [17.2181, 78.4356],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_dd57453e9751f649843ab9ecc2865e96 = L.marker(
+                [17.22, 78.44],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_9d3e116e0bc6beda7b1c970a8d6c0db3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41fffbf8bf5357b6bc19d90139d76715 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e056349e96e0772a9a0e3329968bb6d = $(`<div id="html_0e056349e96e0772a9a0e3329968bb6d" style="width: 100.0%; height: 100.0%;"><b>FC:</b> HYD8-TG<br><b>Region:</b> Hyderabad (Shamshabad)</div>`)[0];
+                popup_41fffbf8bf5357b6bc19d90139d76715.setContent(html_0e056349e96e0772a9a0e3329968bb6d);
+            
+        
+
+        marker_dd57453e9751f649843ab9ecc2865e96.bindPopup(popup_41fffbf8bf5357b6bc19d90139d76715)
+        ;
+
+        
+    
+    
+            marker_dd57453e9751f649843ab9ecc2865e96.bindTooltip(
+                `<div>
+                     HYD8-TG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd57453e9751f649843ab9ecc2865e96.setIcon(icon_9d3e116e0bc6beda7b1c970a8d6c0db3);
+            
+    
+            var circle_d3eb96ce913846aea5695809620d9dbb = L.circle(
+                [17.22, 78.44],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_2e2d279ebe828e65becfcf2ecc2b4509 = L.marker(
+                [26.7606, 80.9142],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_9ee3d443e3a50dd8b615b1cb4c826343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daed724559a7bd5c2246cb33c6ee9f88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2eb65ac2cb9b092aea7583e6b644119 = $(`<div id="html_c2eb65ac2cb9b092aea7583e6b644119" style="width: 100.0%; height: 100.0%;"><b>FC:</b> LKO1-UP<br><b>Region:</b> Lucknow</div>`)[0];
+                popup_daed724559a7bd5c2246cb33c6ee9f88.setContent(html_c2eb65ac2cb9b092aea7583e6b644119);
+            
+        
+
+        marker_2e2d279ebe828e65becfcf2ecc2b4509.bindPopup(popup_daed724559a7bd5c2246cb33c6ee9f88)
+        ;
+
+        
+    
+    
+            marker_2e2d279ebe828e65becfcf2ecc2b4509.bindTooltip(
+                `<div>
+                     LKO1-UP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e2d279ebe828e65becfcf2ecc2b4509.setIcon(icon_9ee3d443e3a50dd8b615b1cb4c826343);
+            
+    
+            var circle_15a8012ef156bb177205870572258e01 = L.circle(
+                [26.7606, 80.9142],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_0fbcc34aaac47c80f0c37d13384f5b83 = L.marker(
+                [13.1415, 79.9071],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_95a85b5976acd07109e2136527e4db59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37fe12b1981f707c69afd554387a5e99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edb96c82af19efe6d028918448772bb8 = $(`<div id="html_edb96c82af19efe6d028918448772bb8" style="width: 100.0%; height: 100.0%;"><b>FC:</b> MAA4-TN<br><b>Region:</b> Chennai (Thiruvallur)</div>`)[0];
+                popup_37fe12b1981f707c69afd554387a5e99.setContent(html_edb96c82af19efe6d028918448772bb8);
+            
+        
+
+        marker_0fbcc34aaac47c80f0c37d13384f5b83.bindPopup(popup_37fe12b1981f707c69afd554387a5e99)
+        ;
+
+        
+    
+    
+            marker_0fbcc34aaac47c80f0c37d13384f5b83.bindTooltip(
+                `<div>
+                     MAA4-TN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fbcc34aaac47c80f0c37d13384f5b83.setIcon(icon_95a85b5976acd07109e2136527e4db59);
+            
+    
+            var circle_ae2b6963d736633b32b70e45aa859146 = L.circle(
+                [13.1415, 79.9071],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_666072487bd7b4350aba535bf704de90 = L.marker(
+                [25.5941, 85.1376],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_1dbce4a3ce22005e148678ff3ff80c17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_929462317d62e01031d9176f7ea1bf16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64fd65bf208a74d5172889bc5d9b2539 = $(`<div id="html_64fd65bf208a74d5172889bc5d9b2539" style="width: 100.0%; height: 100.0%;"><b>FC:</b> PAX1-BR<br><b>Region:</b> Patna</div>`)[0];
+                popup_929462317d62e01031d9176f7ea1bf16.setContent(html_64fd65bf208a74d5172889bc5d9b2539);
+            
+        
+
+        marker_666072487bd7b4350aba535bf704de90.bindPopup(popup_929462317d62e01031d9176f7ea1bf16)
+        ;
+
+        
+    
+    
+            marker_666072487bd7b4350aba535bf704de90.bindTooltip(
+                `<div>
+                     PAX1-BR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_666072487bd7b4350aba535bf704de90.setIcon(icon_1dbce4a3ce22005e148678ff3ff80c17);
+            
+    
+            var circle_3539feea8fc1f93bb4f75cd4b8cdf210 = L.circle(
+                [25.5941, 85.1376],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_75c5e846a7ba6a68d41726c6f111eef8 = L.marker(
+                [28.505, 77.3],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_e1d563ea5b5d650c2186e9d22bb5430e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0886387f4e1c2a0371a9b5e65f5729fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46d0e23ba7de9fc4887c84884b024bf0 = $(`<div id="html_46d0e23ba7de9fc4887c84884b024bf0" style="width: 100.0%; height: 100.0%;"><b>FC:</b> PNQ2-DL<br><b>Region:</b> Delhi (Mohan Cooperative)</div>`)[0];
+                popup_0886387f4e1c2a0371a9b5e65f5729fb.setContent(html_46d0e23ba7de9fc4887c84884b024bf0);
+            
+        
+
+        marker_75c5e846a7ba6a68d41726c6f111eef8.bindPopup(popup_0886387f4e1c2a0371a9b5e65f5729fb)
+        ;
+
+        
+    
+    
+            marker_75c5e846a7ba6a68d41726c6f111eef8.bindTooltip(
+                `<div>
+                     PNQ2-DL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75c5e846a7ba6a68d41726c6f111eef8.setIcon(icon_e1d563ea5b5d650c2186e9d22bb5430e);
+            
+    
+            var circle_c69fae48d171d6324b5532b34bb4b1e8 = L.circle(
+                [28.505, 77.3],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_31774add6f6b4850bf0ed8a19ae48ea4 = L.marker(
+                [18.7831, 73.8682],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_86eee016c45e32850428d3dc19a4e3de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc39db12e9033a3432cd92a8ab79ab79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e327dd0cbeb0b4e4028db842f04f40e1 = $(`<div id="html_e327dd0cbeb0b4e4028db842f04f40e1" style="width: 100.0%; height: 100.0%;"><b>FC:</b> PNQ3-MH<br><b>Region:</b> Pune (Khed/Chakan)</div>`)[0];
+                popup_bc39db12e9033a3432cd92a8ab79ab79.setContent(html_e327dd0cbeb0b4e4028db842f04f40e1);
+            
+        
+
+        marker_31774add6f6b4850bf0ed8a19ae48ea4.bindPopup(popup_bc39db12e9033a3432cd92a8ab79ab79)
+        ;
+
+        
+    
+    
+            marker_31774add6f6b4850bf0ed8a19ae48ea4.bindTooltip(
+                `<div>
+                     PNQ3-MH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31774add6f6b4850bf0ed8a19ae48ea4.setIcon(icon_86eee016c45e32850428d3dc19a4e3de);
+            
+    
+            var circle_064f20579b6b63abdaf47d55eb64c547 = L.circle(
+                [18.7831, 73.8682],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_4ae558cda412b19eceb1cfa2c10adcaa = L.marker(
+                [15.3647, 75.124],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_37b525897d701fdf7bcb1fb6840744b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b00888bddaaff076807218e5739ac52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be4382ebe7875e36bdbb20a0a4ca5bfc = $(`<div id="html_be4382ebe7875e36bdbb20a0a4ca5bfc" style="width: 100.0%; height: 100.0%;"><b>FC:</b> SBLL-KA<br><b>Region:</b> Hubli-Dharwad/Belgaum Cluster</div>`)[0];
+                popup_8b00888bddaaff076807218e5739ac52.setContent(html_be4382ebe7875e36bdbb20a0a4ca5bfc);
+            
+        
+
+        marker_4ae558cda412b19eceb1cfa2c10adcaa.bindPopup(popup_8b00888bddaaff076807218e5739ac52)
+        ;
+
+        
+    
+    
+            marker_4ae558cda412b19eceb1cfa2c10adcaa.bindTooltip(
+                `<div>
+                     SBLL-KA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ae558cda412b19eceb1cfa2c10adcaa.setIcon(icon_37b525897d701fdf7bcb1fb6840744b4);
+            
+    
+            var circle_c89338497d91f6877e07ec2d88f07724 = L.circle(
+                [15.3647, 75.124],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 1.2}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var marker_8982686c032787f8fd98f7bef7d65b97 = L.marker(
+                [26.9405, 75.761],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_147b826f26b15809b45dc8c702644246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3964a3fe1bd2166095761b316bc1b6f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbd36ea1f2b3799f51c890bff96521a4 = $(`<div id="html_cbd36ea1f2b3799f51c890bff96521a4" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> JPX1<br><b>Region:</b> Jaipur (Jhotwara)</div>`)[0];
+                popup_3964a3fe1bd2166095761b316bc1b6f8.setContent(html_cbd36ea1f2b3799f51c890bff96521a4);
+            
+        
+
+        marker_8982686c032787f8fd98f7bef7d65b97.bindPopup(popup_3964a3fe1bd2166095761b316bc1b6f8)
+        ;
+
+        
+    
+    
+            marker_8982686c032787f8fd98f7bef7d65b97.bindTooltip(
+                `<div>
+                     NEW: JPX1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8982686c032787f8fd98f7bef7d65b97.setIcon(icon_147b826f26b15809b45dc8c702644246);
+            
+    
+            var circle_55d4896a7f392841b216302e71fee76d = L.circle(
+                [26.9405, 75.761],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_5a2fe04897f16ba5c6e6940e51003f9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b113577c59186f6736b6dbe880cb33ab = $(`<div id="html_b113577c59186f6736b6dbe880cb33ab" style="width: 100.0%; height: 100.0%;">New 300km Frontier: JPX1</div>`)[0];
+                popup_5a2fe04897f16ba5c6e6940e51003f9c.setContent(html_b113577c59186f6736b6dbe880cb33ab);
+            
+        
+
+        circle_55d4896a7f392841b216302e71fee76d.bindPopup(popup_5a2fe04897f16ba5c6e6940e51003f9c)
+        ;
+
+        
+    
+    
+            var marker_979db1ba177a1c61c25897e45a991953 = L.marker(
+                [22.7815, 75.8925],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_10c49e89d3bc2d85f4b8e66dc7e7395a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e80bb1cc80e2090d322837a8f8f004ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e64fb5eaa8fab364ce4c9b4d95e5fe22 = $(`<div id="html_e64fb5eaa8fab364ce4c9b4d95e5fe22" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> IDX2<br><b>Region:</b> Indore (Dewas Naka/MR11)</div>`)[0];
+                popup_e80bb1cc80e2090d322837a8f8f004ee.setContent(html_e64fb5eaa8fab364ce4c9b4d95e5fe22);
+            
+        
+
+        marker_979db1ba177a1c61c25897e45a991953.bindPopup(popup_e80bb1cc80e2090d322837a8f8f004ee)
+        ;
+
+        
+    
+    
+            marker_979db1ba177a1c61c25897e45a991953.bindTooltip(
+                `<div>
+                     NEW: IDX2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_979db1ba177a1c61c25897e45a991953.setIcon(icon_10c49e89d3bc2d85f4b8e66dc7e7395a);
+            
+    
+            var circle_507baa4ffba24152c91d427d191ca258 = L.circle(
+                [22.7815, 75.8925],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_c5996acd204e283d93564baa1f5e5fba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82b2d705e59a33dbca444327cea1d9dd = $(`<div id="html_82b2d705e59a33dbca444327cea1d9dd" style="width: 100.0%; height: 100.0%;">New 300km Frontier: IDX2</div>`)[0];
+                popup_c5996acd204e283d93564baa1f5e5fba.setContent(html_82b2d705e59a33dbca444327cea1d9dd);
+            
+        
+
+        circle_507baa4ffba24152c91d427d191ca258.bindPopup(popup_c5996acd204e283d93564baa1f5e5fba)
+        ;
+
+        
+    
+    
+            var marker_c7effd886cf28a0d04cb52bca208cea4 = L.marker(
+                [21.0602, 79.0224],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_5a34d8b8378e10e08cf5e32e097b8769 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cbfaa7f91347193e7977133e34bb1b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa62a340028cc51fca31e9baba62e7ef = $(`<div id="html_aa62a340028cc51fca31e9baba62e7ef" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> NAX1<br><b>Region:</b> Nagpur (Orange City Logistics Park)</div>`)[0];
+                popup_9cbfaa7f91347193e7977133e34bb1b2.setContent(html_aa62a340028cc51fca31e9baba62e7ef);
+            
+        
+
+        marker_c7effd886cf28a0d04cb52bca208cea4.bindPopup(popup_9cbfaa7f91347193e7977133e34bb1b2)
+        ;
+
+        
+    
+    
+            marker_c7effd886cf28a0d04cb52bca208cea4.bindTooltip(
+                `<div>
+                     NEW: NAX1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7effd886cf28a0d04cb52bca208cea4.setIcon(icon_5a34d8b8378e10e08cf5e32e097b8769);
+            
+    
+            var circle_874a60e747be83031f5d78adbe13a960 = L.circle(
+                [21.0602, 79.0224],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_7b3d6bdc780c3d0e87f59b861d760ad6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d3b4b2d89658f3210a6eb00e1c4ab34 = $(`<div id="html_5d3b4b2d89658f3210a6eb00e1c4ab34" style="width: 100.0%; height: 100.0%;">New 300km Frontier: NAX1</div>`)[0];
+                popup_7b3d6bdc780c3d0e87f59b861d760ad6.setContent(html_5d3b4b2d89658f3210a6eb00e1c4ab34);
+            
+        
+
+        circle_874a60e747be83031f5d78adbe13a960.bindPopup(popup_7b3d6bdc780c3d0e87f59b861d760ad6)
+        ;
+
+        
+    
+    
+            var marker_49a21f400a1360fb9230e56866f13cb6 = L.marker(
+                [17.366, 78.53],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_fa0f41d5c5fd29b1d445bdd22e92b604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ee71a2af60a980f8b997688f2994b6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fce392c32e6503a7a03e477870693b31 = $(`<div id="html_fce392c32e6503a7a03e477870693b31" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> ATX1<br><b>Region:</b> Hyderabad Cluster Extension (SATA Corridor)</div>`)[0];
+                popup_8ee71a2af60a980f8b997688f2994b6e.setContent(html_fce392c32e6503a7a03e477870693b31);
+            
+        
+
+        marker_49a21f400a1360fb9230e56866f13cb6.bindPopup(popup_8ee71a2af60a980f8b997688f2994b6e)
+        ;
+
+        
+    
+    
+            marker_49a21f400a1360fb9230e56866f13cb6.bindTooltip(
+                `<div>
+                     NEW: ATX1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49a21f400a1360fb9230e56866f13cb6.setIcon(icon_fa0f41d5c5fd29b1d445bdd22e92b604);
+            
+    
+            var circle_28a61437bb2e3b29cdc5dd09e48d8d96 = L.circle(
+                [17.366, 78.53],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_31add13d4165fd34547abe5ec7bd01a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a45356d905955c9ee23415579740de6 = $(`<div id="html_3a45356d905955c9ee23415579740de6" style="width: 100.0%; height: 100.0%;">New 300km Frontier: ATX1</div>`)[0];
+                popup_31add13d4165fd34547abe5ec7bd01a8.setContent(html_3a45356d905955c9ee23415579740de6);
+            
+        
+
+        circle_28a61437bb2e3b29cdc5dd09e48d8d96.bindPopup(popup_31add13d4165fd34547abe5ec7bd01a8)
+        ;
+
+        
+    
+    
+            var marker_ee7463d446b7b7ae29ef78c5cc7a2912 = L.marker(
+                [17.38, 78.5],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_aec4a4ddff7a2fb1128da5a8bfb713e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca1f529f007adf324a90a07cf45f206f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b77bee7584ebb1237ff50507afab3cfa = $(`<div id="html_b77bee7584ebb1237ff50507afab3cfa" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> SATB<br><b>Region:</b> Hyderabad Regional Sortation Extension</div>`)[0];
+                popup_ca1f529f007adf324a90a07cf45f206f.setContent(html_b77bee7584ebb1237ff50507afab3cfa);
+            
+        
+
+        marker_ee7463d446b7b7ae29ef78c5cc7a2912.bindPopup(popup_ca1f529f007adf324a90a07cf45f206f)
+        ;
+
+        
+    
+    
+            marker_ee7463d446b7b7ae29ef78c5cc7a2912.bindTooltip(
+                `<div>
+                     NEW: SATB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee7463d446b7b7ae29ef78c5cc7a2912.setIcon(icon_aec4a4ddff7a2fb1128da5a8bfb713e2);
+            
+    
+            var circle_72632515a667236ca65c48b856dca18c = L.circle(
+                [17.38, 78.5],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_adad920904b79a73993d956bf395e13c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1af3091739dc322fa839311f0a3eed33 = $(`<div id="html_1af3091739dc322fa839311f0a3eed33" style="width: 100.0%; height: 100.0%;">New 300km Frontier: SATB</div>`)[0];
+                popup_adad920904b79a73993d956bf395e13c.setContent(html_1af3091739dc322fa839311f0a3eed33);
+            
+        
+
+        circle_72632515a667236ca65c48b856dca18c.bindPopup(popup_adad920904b79a73993d956bf395e13c)
+        ;
+
+        
+    
+    
+            var marker_fd576faec75e1c580af5f747e3b59f15 = L.marker(
+                [19.312, 73.065],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_b6212ec3ea52dd470508e8089ea3c4d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4320d427537236920c579be37de21b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56a7d7ccdebde2a59ccafeb0cf9aa7c6 = $(`<div id="html_56a7d7ccdebde2a59ccafeb0cf9aa7c6" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> FIDA<br><b>Region:</b> Bhiwandi/Thane Hub Attachment</div>`)[0];
+                popup_c4320d427537236920c579be37de21b4.setContent(html_56a7d7ccdebde2a59ccafeb0cf9aa7c6);
+            
+        
+
+        marker_fd576faec75e1c580af5f747e3b59f15.bindPopup(popup_c4320d427537236920c579be37de21b4)
+        ;
+
+        
+    
+    
+            marker_fd576faec75e1c580af5f747e3b59f15.bindTooltip(
+                `<div>
+                     NEW: FIDA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd576faec75e1c580af5f747e3b59f15.setIcon(icon_b6212ec3ea52dd470508e8089ea3c4d4);
+            
+    
+            var circle_0e908079db3c68abe882a83622ed996d = L.circle(
+                [19.312, 73.065],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_99e087225699925441d69ecac59e907f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f615dc138e1fc2712c39b80e3a126311 = $(`<div id="html_f615dc138e1fc2712c39b80e3a126311" style="width: 100.0%; height: 100.0%;">New 300km Frontier: FIDA</div>`)[0];
+                popup_99e087225699925441d69ecac59e907f.setContent(html_f615dc138e1fc2712c39b80e3a126311);
+            
+        
+
+        circle_0e908079db3c68abe882a83622ed996d.bindPopup(popup_99e087225699925441d69ecac59e907f)
+        ;
+
+        
+    
+    
+            var marker_572eca3ded0462aff7234c5fb1d64cde = L.marker(
+                [28.485, 77.31],
+                {
+}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+            var icon_7786c0251a3880dd0b3874a2f82c0bde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45ae6d2687e9da7857bcb6c6b5d62023 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a195f3bf1a60d41411565052cf8e9a9 = $(`<div id="html_2a195f3bf1a60d41411565052cf8e9a9" style="width: 100.0%; height: 100.0%;"><b>EXPANSION FC:</b> SBHF<br><b>Region:</b> Delhi Heavy Freight Freight Processing Hub</div>`)[0];
+                popup_45ae6d2687e9da7857bcb6c6b5d62023.setContent(html_2a195f3bf1a60d41411565052cf8e9a9);
+            
+        
+
+        marker_572eca3ded0462aff7234c5fb1d64cde.bindPopup(popup_45ae6d2687e9da7857bcb6c6b5d62023)
+        ;
+
+        
+    
+    
+            marker_572eca3ded0462aff7234c5fb1d64cde.bindTooltip(
+                `<div>
+                     NEW: SBHF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_572eca3ded0462aff7234c5fb1d64cde.setIcon(icon_7786c0251a3880dd0b3874a2f82c0bde);
+            
+    
+            var circle_cb8faae362eb5f78c16e137b8fa41d32 = L.circle(
+                [28.485, 77.31],
+                {"bubblingMouseEvents": true, "color": "royalblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "dodgerblue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300000, "stroke": true, "weight": 2.0}
+            ).addTo(map_f1231ba74c6d078501ce7c0796b7bfe3);
+        
+    
+        var popup_203bb6f37acaf72c0778e6cd4229b10c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fedcf0588a4f59619ffa0d7876bceb1 = $(`<div id="html_7fedcf0588a4f59619ffa0d7876bceb1" style="width: 100.0%; height: 100.0%;">New 300km Frontier: SBHF</div>`)[0];
+                popup_203bb6f37acaf72c0778e6cd4229b10c.setContent(html_7fedcf0588a4f59619ffa0d7876bceb1);
+            
+        
+
+        circle_cb8faae362eb5f78c16e137b8fa41d32.bindPopup(popup_203bb6f37acaf72c0778e6cd4229b10c)
+        ;
+
+        
+    
+</script>
+</html>
