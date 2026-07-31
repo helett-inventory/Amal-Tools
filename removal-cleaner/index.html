@@ -22,7 +22,7 @@ button{padding:8px 16px;margin-top:10px;cursor:pointer;font-size:14px}
 <span id="status"></span>
 
 <table id="out">
-<thead><tr><th>SKU</th><th>ORDER ID</th><th>UNITS CREATED</th><th>REMOVAL DATE</th><th>Disposition</th></tr></thead>
+<thead><tr><th>SKU</th><th>ASIN</th><th>ORDER ID</th><th>UNITS CREATED</th><th>REMOVAL DATE</th><th>Disposition</th></tr></thead>
 <tbody id="body"></tbody>
 </table>
 
@@ -44,6 +44,9 @@ function parseData(){
     if(!skuMatch) return;
     const sku = skuMatch[1].trim().replace(/\s+(FBA|MFN)$/i, '').trim();
 
+    const asinMatch = chunk.match(/ASIN\s*:\s*(\S+)/);
+    const asin = asinMatch ? asinMatch[1].trim() : '';
+
     const dispMatch = chunk.match(/Disposition:\s*(\S+)/);
     const disposition = dispMatch ? dispMatch[1].trim() : '';
 
@@ -60,14 +63,14 @@ function parseData(){
         break;
       }
     }
-    rows.push({sku, qty, disposition});
+    rows.push({sku, asin, qty, disposition});
   });
 
   const body = document.getElementById('body');
   body.innerHTML = '';
   rows.forEach(r=>{
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${r.sku}</td><td>${orderId}</td><td>${r.qty}</td><td>${removalDate}</td><td>${r.disposition}</td>`;
+    tr.innerHTML = `<td>${r.sku}</td><td>${r.asin}</td><td>${orderId}</td><td>${r.qty}</td><td>${removalDate}</td><td>${r.disposition}</td>`;
     body.appendChild(tr);
   });
   document.getElementById('status').innerText = rows.length + ' rows parsed.';
